@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b1f48a;
+  margin: 0;
+}
+
+.sudoku {
+  display: flex;
+  flex-wrap: wrap;
+  aspect-ratio: 1/1;
+  box-sizing: border-box;
+  border: 4px solid #333;
+}
+
+.sudoku__grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 3);
+  flex-grow: 1;
+  aspect-ratio: 1/1;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+
+.sudoku__cell {
+  display: flex;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  align-items: center;
+  flex-basis: calc(100% / 3);
+  flex-grow: 1;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  background-color: #f9d69e;
+}
+
+/* media query for portrait view  */
+@media screen and (orientation: portrait) {
+  /* height is greater than width */
+  .sudoku {
+    position: absolute;
+    top: calc(50vh - 50vw);
+    width: 100vw;
+    height: 100vw;
+  }
+}
+
+/* media query for landscape view  */
+@media screen and (orientation: landscape) {
+  /* width is greter than height */
+  .sudoku {
+    width: 100vh;
+    height: 100vh;
+  }
+}
