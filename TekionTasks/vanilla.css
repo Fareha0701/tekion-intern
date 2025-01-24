@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(159 244 171);
+  text-align: center;
+}
+
+.sudoku {
+  border-collapse: collapse;
+  /* width: 100vh;
+  height: 100vh; */
+  margin: auto;
+  background-color: bisque;
+  border: 3px solid black;
+}
+
+.sudoku td {
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+  border: 1px solid #7e7474;
+  box-sizing: border-box;
+}
+
+.sudoku tr:nth-child(3n):not(:nth-child(9n)) td {
+  border-bottom: 3px solid black;
+}
+.sudoku td:nth-child(3n):not(:nth-child(9n)) {
+  border-right: 3px solid black;
+}
+
+/* @media (max-aspect-ratio: 1/1) {
+  height greater than width 
+  body {
+    position: relative;
+    height: 100vh; 
+    margin: 0; 
+  }
+  .sudoku {
+    width: 100vw; 
+    height: 100vw; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-aspect-ratio: 1/1) {
+  width greater than height 
+  .sudoku {
+    width: 100vh; 
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+} */
+
+@media screen and (orientation: portrait) {
+  /* height is greater than width */
+  .sudoku {
+    position: absolute;
+    top: calc(50vh - 50vw);
+    width: 100vw;
+    height: 100vw;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  /* width is greter than height */
+  .sudoku {
+    width: 100vh;
+    height: 100vh;
+  }
+}
