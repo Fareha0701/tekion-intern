@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vanilla</title>
+    <link rel="stylesheet" href="sudoku_vanilla.css" />
+  </head>
+  <body>
+    <!-- <header class="heading">
+      <h1>Sudoku</h1>
+    </header> -->
+    <!-- <section> -->
+    <div class="wrapper">
+      <div class="sudoku">
+        <div class="sudoku__grid">
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+        </div>
+
+        <div class="sudoku__grid">
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+        </div>
+
+        <div class="sudoku__grid">
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+        </div>
+
+        <div class="sudoku__grid">
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+        </div>
+
+        <div class="sudoku__grid">
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+        </div>
+
+        <div class="sudoku__grid">
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+        </div>
+
+        <div class="sudoku__grid">
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+        </div>
+
+        <div class="sudoku__grid">
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+        </div>
+
+        <div class="sudoku__grid">
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+          <input class="sudoku__cell" type="text" maxlength="1" />
+        </div>
+      </div>
+
+      <div class="buttonArea">
+        <button id="newGame">New Game</button>
+        <button id="validate">Check</button>
+        <button id="hint">Hint</button>
+      </div>
+    </div>
+    <!-- </section> -->
+    <script src="sudoku.js"></script>
+  </body>
+</html>
