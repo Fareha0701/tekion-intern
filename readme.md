@@ -39,8 +39,8 @@ An interactive Sudoku game implemented using **HTML, CSS, and Vanilla JavaScript
 
 ## Screenshots
 
-![sudoku](images/sudoku.png)
-![check](images/check.png)
-![hint](images/hint.png)
-![alertWin](images/alertWin.png)
-![responsive](images/responsiveness.png)
+![sudoku](Images/sudoku.png)
+![check](Images/check.png)
+![hint](Images/hint.png)
+![alertWin](Images/alertWin.png)
+![responsive](Images/responsiveness.png)
