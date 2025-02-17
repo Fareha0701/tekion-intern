@@ -75,4 +75,4 @@ An interactive Sudoku game implemented using **HTML, CSS, and Vanilla JavaScript
 
 ## Screenshots
 
-! [alertWin] (Images/alertWin.png)
+![alertWin] (Images/alertWin.png)
