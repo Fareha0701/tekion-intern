@@ -1,39 +1,3 @@
-<!-- About:
-This project is an interactive Sudoku game implemented using HTML, CSS and vanilla JavaScript. It allows users to play a standard 9x9 Sudoku puzzle, with features such as number input validation, automatic grid updates, and game completion detection.
-
-Tech-stack:
-HTML for structure
-CSS for styling
-JavaScript for game's logic
-
-Features:
--A clean and responsive UI using HTML and CSS.
--Fully interactive 9x9 Sudoku board.
--Ability to set values in empty cells.
--New Game : Generates a new Sudoku puzzle.
--Check : Validates the current board with the original board ensuring that numbers should follow all sudoku rules and returns a win or lose accordingly
--Hint : Provides a hint for a cell.
-
-Architecture:
-
-1. Frontend (User Interface)
-
-HTML (sudo_vanilla.html): Provides the structure of the Sudoku board with a 9x9 grid.
-CSS (vanilla.css): Styles the game board, ensuring a clean and user-friendly interface.
-
-2. JavaScript Logic (Game Engine)
-
-Game Initialization:
-
-1. constructor function is inistialized with all the values and functions
-2. generateUUID - generates the unique id for each object with random function along with bitwise operators
-3. generateGrid - generates the originalgrid randomly, validates that each row, column, and 3x3 subgrid must contain unique numbers from 1 to 9 after validation only it populates the sudoku.
-4. generateVisibleGrid - displays only 25 numbers on the sudoku board and hides the value of 56 cells
-5. setValue - Allows users to input numbers into cells.
-6. end - calculates the elapsed time to display the result along with the message, accodring to the result of validate function
-7. validate - checks that all rows, columns, and 3x3 subgrids contain unique numbers from 1-9 and returns True/False accordingly.
-8. hint - 3 available hints, can only be used with empty cells. Randomly chooses the null index of the grid and dispalys the value from the originalGrid. -->
-
 # Sudoku Game
 
 An interactive Sudoku game implemented using **HTML, CSS, and Vanilla JavaScript**. It allows users to play a standard **9x9 Sudoku puzzle**, featuring number input validation, automatic grid updates, and game completion detection.
@@ -75,4 +39,8 @@ An interactive Sudoku game implemented using **HTML, CSS, and Vanilla JavaScript
 
 ## Screenshots
 
-![alertWin](Images/alertWin.png)
+![sudoku](images/sudoku.png)
+![check](images/check.png)
+![hint](images/hint.png)
+![alertWin](images/alertWin.png)
+![responsive](images/responsiveness.png)
