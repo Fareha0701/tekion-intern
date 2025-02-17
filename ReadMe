@@ -1,5 +1,0 @@
-A simple Sudoku game built with vanilla JavaScript with three features:
-
-New Game : Generates a new Sudoku puzzle.
-Check : Validates the current board.
-Hint : Provides a hint for a cell.
