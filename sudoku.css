@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #efdfd1;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.sudoku {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border: 4px solid #333;
+}
+
+.sudoku__grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+
+.sudoku__cell {
+  display: flex;
+  justify-content: center;
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  align-items: center;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  background-color: #ecebe8;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* media query for portrait view  */
+@media screen and (orientation: portrait) {
+  /* height is greater than width */
+  .sudoku {
+    width: 55vw;
+    height: 55vw;
+  }
+  .wrapper {
+    width: 55vw;
+  }
+  .buttonArea {
+    width: 55vw;
+  }
+}
+
+/* media query for landscape view  */
+@media screen and (orientation: landscape) {
+  /* width is greter than height */
+  .sudoku {
+    width: 55vh;
+    height: 55vh;
+  }
+  .buttonArea {
+    width: 55vh;
+  }
+}
+
+.buttonArea {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  width: calc(100% / 4);
+  min-height: 8vh;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 55vh;
+  gap: 5vh;
+}
+
+/* .heading {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
