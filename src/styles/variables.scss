@@ -1,0 +1,51 @@
+//initialized variables for light and dark theme, used globally
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+//light theme
+$font-family: "Open Sans", sans-serif;
+$background-color-light: rgb(244, 235, 225);
+$text-color-light: black;
+$gradient-background-light: linear-gradient(
+  70deg,
+  #e38074 15%,
+  #e99674 35%,
+  #f5a871 60%,
+  #ffb359 85%
+);
+$powerplay-heading-light: white;
+$cards-color-light: white;
+$cards-hover-light: linear-gradient(135deg, #cdffd8, #94f2ff);
+$modal-logout-light: #ff6b6b;
+$modal-log-hover-light: #ff4f4f;
+$modal-buttons-hover-light: #a0a0a0;
+$profile-card-border-light: 1px solid black;
+$divider-color-light: 1px solid #a0a0a0;
+$theme-border-light: 0.5px solid black;
+$gradient-background-buttons-light: linear-gradient(135deg, #cdffd8, #94f2ff);
+$table-border-light: 1px solid #ddd;
+
+//dark theme
+$background-color-dark: #020202;
+$text-color-dark: white;
+$gradient-background-dark: linear-gradient(
+  70deg,
+  // #09285d 15%,
+  #1f586b 15%,
+  #21738e 35%,
+  #33829c 60%,
+
+  #59dbff 85%
+);
+$powerplay-heading-dark: black;
+$cards-color-dark: rgb(19, 17, 17);
+$cards-hover-dark: linear-gradient(135deg, #2f3d66, #6a8b90);
+$modal-logout-dark: #27849d;
+$modal-log-hover-dark: #113944;
+$modal-buttons-hover-dark: #113944;
+$profile-card-border-dark: 1px solid #27849d;
+$divider-color-dark: 1px solid #27849d;
+$theme-border-dark: 0.5px solid #27849d;
+$gradient-background-buttons-dark: linear-gradient(135deg, #59dbff, #33829c);
+$table-border-dark: 1px solid #27849d;
+// $newred: #153d9b;
