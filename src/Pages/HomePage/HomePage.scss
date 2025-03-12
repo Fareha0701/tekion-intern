@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "../../styles/variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.HomeMainCon {
+  background-color: var(--bg-color);
+  position: relative;
+  height: 94vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+}
+.SectionForm {
+  width: 80%;
+}
+
+.SectionContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  // padding: 5vh;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 2vh;
+  }
+}
+.Heading {
+  font-family: $font-family;
+  color: var(--txt-color);
+  font-size: 5vh;
+  width: 35vw;
+
+  @media (max-width: 768px) {
+    font-size: 4vh;
+    width: 80vw;
+    text-align: center;
+  }
+}
+.UserInput {
+  width: calc(20vw);
+  height: calc(5vh);
+  font-size: calc(1.5vh + 0.5vw);
+  border-radius: calc(2vh);
+  border: none;
+  padding: 0 calc(2vw);
+  outline: none;
+  margin-right: 1%;
+
+  @media (max-width: 768px) {
+    width: 80vw;
+    margin-bottom: 10px;
+  }
+}
+.ArrowButton {
+  width: 7vw;
+  height: 5vh;
+  border-radius: 36%;
+
+  @media (max-width: 768px) {
+    width: calc(8vh);
+    height: calc(4vh);
+  }
+}
+
+.Icons {
+  // background-color: red;
+  position: absolute;
+  bottom: 2vh;
+  right: 0vw;
+  height: 38%;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+
+  .TicTacToe {
+    position: absolute;
+    left: 45vw;
+    background-color: rgb(241 241 244 / 97%);
+    width: 13vw;
+    height: 13vh;
+  }
+  .Notepad {
+    background-color: rgb(241 241 244 / 97%);
+    width: 7vw;
+    height: 13vh;
+    position: absolute;
+    bottom: 12vh;
+    left: 38vw;
+    align-items: center;
+    padding: 0;
+  }
+  .Chess {
+    bottom: 0;
+    left: 31vw;
+    position: absolute;
+    background-color: rgb(241 241 244 / 97%);
+    width: 7vw;
+    height: 12vh;
+    align-items: center;
+  }
+}

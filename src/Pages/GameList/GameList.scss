@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+}
+
+.GameListCon {
+  background-color: var(--bg-color);
+  // height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6vh;
+
+  .GamesHeading {
+    // margin-top: 10vh;
+    // margin-left: 16vw;
+    width: 80%;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto;
+    // margin-top: 5vh;
+    color: var(--txt-color);
+
+    @media (max-width: 768px) {
+      margin-left: 8vw;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.ShowGameCard {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  width: 80%;
+  gap: 2vw;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  margin-left: 9vw;
+  @media (max-width: 768px) {
+    gap: 1vw;
+    margin-top: 3vh;
+  }
+}

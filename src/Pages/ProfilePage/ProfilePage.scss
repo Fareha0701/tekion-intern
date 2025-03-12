@@ -1,0 +1,154 @@
+// @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "../../styles/variables.scss";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+}
+
+.ProfilePageMainCon {
+  background-color: var(--bg-color);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--txt-color);
+}
+
+.ProfileCard {
+  width: 30vw;
+  height: 60vh;
+  background-color: var(--cards-color-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8vh;
+  border-radius: 2vh;
+  border: var(--profilecard-border);
+  padding: 2%;
+
+  @media (max-width: 768px) {
+    width: 80vw;
+    height: auto;
+    margin-top: 5vh;
+  }
+}
+
+.TopMain {
+  height: 40%;
+  display: flex;
+}
+
+.ImgCon {
+  width: 40%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:hover .EditIcon {
+    opacity: 1;
+  }
+}
+
+.EditIcon {
+  position: absolute;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.ProfileImage {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  border-color: white;
+}
+
+.NameCon {
+  width: 60%;
+  height: 100%;
+  padding-left: 1%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.BottomMain {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ThemeSelection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3vh;
+}
+
+.theme {
+  color: var(--txt-color);
+  font-size: calc(1vh + 0.5vw);
+}
+
+#theme {
+  border: var(--theme-border-color); //
+  width: calc(5vw);
+  height: calc(5vh);
+  font-size: calc(0.5vh + 0.5vw);
+  border-radius: calc(2vh);
+  background: var(--gradient-bg-buttons);
+}
+
+.Statsbtn {
+  display: flex;
+  justify-content: center;
+  padding: 9vh;
+}
+
+.ShowStats {
+  width: calc(10vw);
+  height: calc(5vh);
+  font-size: calc(1vh + 0.5vw);
+  border-radius: calc(2vh);
+  background: var(--gradient-bg-buttons);
+}
+
+.Divider {
+  width: 100%;
+  margin: 10px auto;
+  border: var(--divider-color);
+}

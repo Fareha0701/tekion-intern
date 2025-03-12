@@ -1,0 +1,138 @@
+@import "./styles/variables.scss";
+
+:root {
+  --bg-color: #{$background-color-light};
+  --txt-color: #{$text-color-light};
+  --gradient-bg: #{$gradient-background-light};
+  --cards-color-bg: #{$cards-color-light};
+  --powerplay-color: #{$powerplay-heading-light};
+  --cards-color-hover: #{$cards-hover-light};
+  --modal-logout-bg: #{$modal-logout-light};
+  --modal-logout-hover: #{$modal-log-hover-light};
+  --modal-buttons-hover: #{$modal-buttons-hover-light};
+  --profilecard-border: #{$profile-card-border-light};
+  --divider-color: #{$divider-color-light};
+  --theme-border-color: #{$theme-border-light};
+  --gradient-bg-buttons: #{$gradient-background-buttons-light};
+  --table-border: #{$table-border-light};
+}
+
+[data-theme="dark"] {
+  // background-color: var(--bg-color-dark);
+  // color: var(--txt-color-dark);
+  // filter: invert(1);
+  --bg-color: #{$background-color-dark};
+  --txt-color: #{$text-color-dark};
+  --gradient-bg: #{$gradient-background-dark};
+  --powerplay-color: #{$powerplay-heading-dark};
+  --cards-color-bg: #{$cards-color-dark};
+  --cards-color-hover: #{$cards-hover-dark};
+  --modal-logout-bg: #{$modal-logout-dark};
+  --modal-logout-hover: #{$modal-log-hover-dark};
+  --modal-buttons-hover: #{$modal-buttons-hover-dark};
+  --profilecard-border: #{$profile-card-border-dark};
+  --divider-color: #{$divider-color-dark};
+  --theme-border-color: #{$theme-border-dark};
+  --gradient-bg-buttons: #{$gradient-background-buttons-dark};
+  --table-border: #{$table-border-dark};
+}
+
+body {
+  font-family: $font-family;
+  background: var(--bg-color);
+  color: var(--txt-color);
+
+  .Title {
+    background-color: var(--gradient-bg);
+    .Powerplay {
+      color: var(--powerplay-color);
+    }
+    .NavigationButtons {
+      color: var(--bg-color);
+    }
+    .UserProfileContent {
+      color: var(--bg-color);
+    }
+  }
+
+  .HomeMainCon {
+    background-color: var(--bg-color);
+    .Heading {
+      color: var(--txt-color);
+    }
+  }
+
+  .GameListCon {
+    background-color: var(--bg-color);
+    // color: var(--txt-color);
+
+    .GamesHeading {
+      color: var(--txt-color);
+    }
+  }
+  // .UploadContainer,
+  .GameCard {
+    background-color: var(--cards-color-bg);
+    .GameCardHeading,
+    .GameGenre,
+    .btn1 {
+      color: var(--txt-color);
+    }
+
+    &:hover {
+      background-color: var(--cards-color-hover);
+    }
+  }
+
+  .ModalContent {
+    background-color: var(--cards-color-bg);
+    .ModalHeading {
+      color: var(--txt-color);
+    }
+    #content {
+      color: var(--txt-color);
+      &:hover {
+        background-color: var(--modal-buttons-hover);
+      }
+    }
+    .ModalLogout {
+      background-color: var(--modal-logout-bg);
+      &:hover {
+        background-color: var(--modal-logout-hover);
+      }
+    }
+  }
+
+  .ProfilePageMainCon {
+    background-color: var(--bg-color);
+    .ProfileCard {
+      background-color: var(--cards-color-bg);
+      border: var(--profilecard-border);
+    }
+    .Divider {
+      border: var(--divider-color);
+    }
+    #theme {
+      border: var(--theme-border-color);
+      background-color: var(--gradient-bg-buttons);
+    }
+    .ShowStats {
+      background-color: var(--gradient-bg-buttons);
+    }
+  }
+
+  .UploadContainer {
+    background-color: var(--gradient-bg-buttons);
+    border: var(--profilecard-border);
+  }
+
+  .tableCon {
+    background-color: var(--cards-color-bg);
+    border: var(--table-border);
+  }
+}
+
+// body {
+//   background-color: var(--bg-color);
+//   color: var(--txt-color);
+// }

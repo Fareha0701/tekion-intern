@@ -1,0 +1,147 @@
+@import "../../styles/variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+}
+
+.StatsMainCon {
+  color: var(--txt-color);
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  // padding: 20px;
+  margin-top: 6vh;
+}
+
+.StatsHeading {
+  font-size: 2rem;
+  color: var(--txt-color);
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    margin-top: 3vh;
+  }
+}
+
+.ContentDiv {
+  // margin-left: 13vw;
+  display: flex;
+  flex-direction: column;
+  // width: 90%;
+}
+
+.filterNsearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2vh;
+  // margin: 20px 0;
+
+  .searchBar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    padding-left: 30px;
+    input {
+      border: none;
+      outline: none;
+      padding: 5px;
+      // width: 100%;
+      // padding-left: 30px;
+    }
+    svg {
+      margin-left: 5px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.tableCon {
+  // margin-top: 1.5vh;
+  margin: 1.5vh auto;
+  width: 80%;
+  max-width: 100%;
+  min-height: 36vh;
+  border: var(--table-border);
+  background-color: var(--cards-color-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  // background-color: var(--table-border);
+}
+
+th,
+td {
+  padding: 10px;
+  border: var(--table-border);
+  text-align: center;
+  white-space: nowrap;
+
+  @media (max-width: 768px) {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+th {
+  font-weight: bold;
+  background-color: var(--cards-color);
+}
+
+.pagination {
+  display: flex;
+  margin-left: 4vw;
+  gap: 10px;
+  margin-top: auto;
+  position: absolute;
+  bottom: 18px;
+
+  .PageButton {
+    background-color: transparent;
+    // border: 1px solid #e38074;
+    color: var(--txt-color);
+    // padding: 5px 6px;
+    // border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    // width: 2vw;
+    // height: 2vh;
+
+    &:hover {
+      color: #74c0e3;
+    }
+  }
+  .activePage {
+    background-color: #74c0e3;
+    color: white;
+
+    // border-radius: 5px;
+  }
+}

@@ -1,0 +1,91 @@
+// @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "../../styles/variables.scss";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+}
+
+.ModalMainCon {
+  position: absolute;
+  top: 2vh;
+  right: 12vh;
+  width: 25vw;
+  height: 51vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    width: 80vw;
+    height: auto;
+    top: 5vh;
+    right: 10vw;
+  }
+}
+.ModalContent {
+  background-color: var(--cards-color-bg);
+  padding: 1rem;
+  position: relative;
+  border-radius: 10px;
+  width: 17vw;
+  min-height: 38vh;
+  text-align: left;
+  border: var(--profilecard-border);
+
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+.ModalHeading {
+  font-size: 1rem;
+  margin-top: 2vh;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--txt-color);
+}
+
+.ModalUsername {
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  color: var(--txt-color);
+}
+#content {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.8rem 0;
+  cursor: pointer;
+  color: var(--txt-color);
+  border: none;
+  background: none;
+  &:hover {
+    background-color: var(--modal-buttons-hover);
+  }
+}
+
+.ModalLogout {
+  // margin-top: 1rem;
+  padding: 0.4rem 0;
+  background-color: var(--modal-logout-bg);
+  color: var(--txt-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 1rem;
+  // justify-content: center;
+  align-items: center;
+  width: 85%;
+  position: absolute;
+  bottom: 14px;
+
+  &:hover {
+    background-color: var(--modal-logout-hover);
+  }
+}
